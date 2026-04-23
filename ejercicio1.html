@@ -1,0 +1,21 @@
+<!--Modifica el archivo ejercicio1.html. Crea una página HTML con un párrafo vacío y un botón. 
+Cuando se haga clic en el botón, el contenido del párrafo debe 
+cambiar a "¡Texto actualizado con Javascript!". -->
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando DOM con innerHTML</title>
+ </head>
+ <body>
+    <p id="sin-contenido"></p>
+    <button onclick="cambiarcontenido()">Cambiar Contenido</button>
+
+    <script> 
+        function cambiarcontenido() {
+            document.getElementById("sin-contenido").innerHTML = "¡Texto actualizado con JavaScript!";
+        }
+    </script>
+ </body>
+</html>
