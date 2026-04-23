@@ -1,0 +1,30 @@
+Un título que diga "Demostración de Output en Javascript".
+Un botón que, al hacer clic, muestre una alerta con tu nombre.
+Un párrafo vacío y un botón que, al hacer clic, cambie el contenido del párrafo a "¡Texto actualizado con Javascript!".
+Un mensaje que se imprima en la consola del navegador cuando se cargue la página. -->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output en Javascript</title>
+ </head>
+ <body>
+    <h1>Demostración de Output en Javascript</h1>
+    <button onclick="MostrarAlerta()">Mostrar Alerta</button>
+    <p id="sin-contenido"></p>
+    <button onclick="ActualizarParrafo()">Actualizar Párrafo</button>
+
+    <script>
+        <!--Funcion para mostrar alerta con nombre-->
+        function MostrarAlerta() {
+            alert("¡Bienvenido! Fulanito de tal");
+            console.log("Alerta mostrada con el nombre.");
+        }
+        function ActualizarParrafo() {
+            document.getElementById("sin-contenido").innerHTML = "¡Texto actualizado con JavaScript!";
+        }
+        console.log("Pagina cargada correctamente.");
+    </script>
+ </body>
+</html>
